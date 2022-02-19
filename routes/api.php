@@ -2,6 +2,8 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ClientController;
+use App\Http\Controllers\StatusController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,4 +21,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 //AddClient
-Route::post('addClient', 'ClientController@addClient');
+Route::post('addClient', 'App\Http\Controllers\ClientController@addClient');
+
+//Get Status
+Route::get('getStatus', 'App\Http\Controllers\StatusController@getStatus');
