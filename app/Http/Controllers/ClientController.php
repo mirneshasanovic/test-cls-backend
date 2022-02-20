@@ -27,6 +27,10 @@ class ClientController extends Controller
                     "status"=>$status
         );
         DB::table('clients')->insert($data);
+        DB::select("Call addCityFromClientCity()");
+        DB::select("Call addCountryFromClientCountry()");
+        DB::select("Call addIndustryFromClientIndustry()");
+        DB::select("Call addContactFromClientContact()");
         echo "Record inserted successfully.<br/>";
         }
 }
