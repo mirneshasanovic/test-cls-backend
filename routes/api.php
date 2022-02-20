@@ -25,3 +25,15 @@ Route::post('addClient', 'App\Http\Controllers\ClientController@addClient');
 
 //Get Status
 Route::get('getStatus', 'App\Http\Controllers\StatusController@getStatus');
+
+//Get Country
+Route::get('getCountry', 'App\Http\Controllers\CountryController@getCountry');
+
+//Get City
+Route::get('getCity', 'App\Http\Controllers\CityController@getCity');
+
+//Get Industry
+Route::get('getIndustry', 'App\Http\Controllers\IndustryController@getIndustry');
+
+//Get Contact
+Route::get('getContact', 'App\Http\Controllers\ContactController@getContact');
