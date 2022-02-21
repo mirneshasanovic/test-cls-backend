@@ -29,11 +29,20 @@ Route::get('getStatus', 'App\Http\Controllers\StatusController@getStatus');
 //Get Country
 Route::get('getCountry', 'App\Http\Controllers\CountryController@getCountry');
 
-//Get City
-Route::get('getCity', 'App\Http\Controllers\CityController@getCity');
-
 //Get Industry
 Route::get('getIndustry', 'App\Http\Controllers\IndustryController@getIndustry');
 
 //Get Contact
 Route::get('getContact', 'App\Http\Controllers\ContactController@getContact');
+
+//Get City
+Route::get('getCities', 'App\Http\Controllers\CityController@getCities');
+
+//Update City
+Route::put('editCity/{id}/','App\Http\Controllers\CityController@editCity');
+
+//Show specific City
+Route::get('showCity/{id}','App\Http\Controllers\CityController@showCity');
+
+//Delete city
+Route::delete('deleteCity/{id}/','App\Http\Controllers\CityController@deleteCity');
